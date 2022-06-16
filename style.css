@@ -1,0 +1,41 @@
+.active{
+    color: #fff;
+}
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: #000;  
+    border-radius: 50%;
+}
+.img-fluid{
+    filter: grayscale(1) ;
+    transition: all .5s;
+}
+.img-fluid:hover{
+    filter: grayscale(0) ;
+}
+.card-img-top{
+    filter: grayscale(1) blur(2px);
+    transition: all .5s;
+}
+.card-img-top:hover{
+    filter: grayscale(0) blur(0);
+}
+.typing{
+    font-family: monospace;
+    display: inline-block;
+    width: 0;
+    height: 76px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s forwards steps(11);
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to{
+        width:525px;
+    }
+}
